@@ -1,0 +1,6 @@
+--搭建eureka高可用集群
+参照网上，进行如下操作变更，配置多个profiles,启动的时候，通过控制台输入需要启动哪个。
+配置Host:路径--》C:\Windows\System32\Drivers\etc
+追加上
+127.0.0.1 serverone servertwo
+测试是否生效：ping serverone

@@ -1,13 +1,30 @@
-server:
+---
+server: 
    port: 1111
+spring: 
+   profiles: eurekaone
+   application: 
+      name: eureka-server-one
 eureka:
    instance:
-      hostname: localhost
-   client:
-      registerWithEureka: false
-      fetchRegistry: false
+      hostname: serverone
+   client: 
       serviceUrl:
-         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+         defaultZone: http://servertwo:1112/eureka/
+
+---
+server: 
+   port: 1112
+spring: 
+   profiles: eurekatwo
+   application: 
+      name: eureka-server-two
+eureka:
+   instance:
+      hostname: servertwo
+   client: 
+      serviceUrl:
+         defaultZone: http://serverone:1111/eureka/
 
       
          
