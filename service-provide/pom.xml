@@ -2,5 +2,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learn.springcloud</groupId>
   <artifactId>service-provide</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<!-- 教材上配置的是这个：spring-cloud-starter-eureka，就必须配置spring-cloud-starter-web -->
+  		<artifactId>spring-cloud-starter-eureka-server</artifactId>
+  	</dependency>
+  </dependencies>
+   <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.springframework.cloud</groupId>
+  			<artifactId>spring-cloud-dependencies</artifactId>
+  			<version>Dalston.SR5</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

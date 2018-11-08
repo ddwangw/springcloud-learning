@@ -1,0 +1,10 @@
+一、创建的启动类路径要在其他注解类的上级，否则启动后controller注解无法扫描，报错。
+
+二、pom.xml文件配置
+
+教材上配置的是这个：spring-cloud-starter-eureka，就必须配置spring-cloud-starter-web，否则启动会报错
+
+使用不同的配置项，maven构建的包的数量也不一样。感兴趣的可以进行测试
+spring-cloud-starter-eureka，web:99个
+
+spring-cloud-starter-eureka-server：112个
