@@ -1,0 +1,3 @@
+新建的这个服务消费者由ribbon完成--ribbon是一个基于http和tcp的客户端负载均衡器。
+
+书中引入了spring-cloud-starter-ribbon，我们这里引入的是eureka-server ,看ribbon是否被默认引入了。
