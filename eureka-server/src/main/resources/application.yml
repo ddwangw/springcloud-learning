@@ -4,7 +4,7 @@ server:
 spring: 
    profiles: eurekaone
    application: 
-      name: eureka-server-one
+      name: eureka-server
 eureka:
    instance:
       hostname: serverone
@@ -18,7 +18,7 @@ server:
 spring: 
    profiles: eurekatwo
    application: 
-      name: eureka-server-two
+      name: eureka-server
 eureka:
    instance:
       hostname: servertwo

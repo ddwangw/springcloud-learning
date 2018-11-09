@@ -1,3 +1,10 @@
 新建的这个服务消费者由ribbon完成--ribbon是一个基于http和tcp的客户端负载均衡器。
 
-书中引入了spring-cloud-starter-ribbon，我们这里引入的是eureka-server ,看ribbon是否被默认引入了。
+书中引入了spring-cloud-starter-ribbon，我们这里引入的是eureka-server ,看ribbon是否被默认引入,没问题，正常使用。
+
+测试一、
+
+服务注册时，只提供一个eureka地址，看注册中心是否会自动在集群中进行信息同步。
+
+在引入熔断时，必须加入依赖 ，否则无法使用熔断注解
+spring-cloud-starter-hystrix

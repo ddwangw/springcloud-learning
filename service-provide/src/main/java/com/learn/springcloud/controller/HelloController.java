@@ -16,7 +16,7 @@ public class HelloController {
 	@Autowired
 	private DiscoveryClient client;
 	@RequestMapping(value="/hello",method = RequestMethod.GET)
-	public String index() {
+	public String hello() {
 		ServiceInstance instance = client.getLocalServiceInstance();
 		logger.info("/hello,host:"+instance.getHost()+",service_id:"+instance.getServiceId());
 		return "Hello World";
