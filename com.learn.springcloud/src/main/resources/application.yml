@@ -1,0 +1,15 @@
+server: 
+   port: 5555
+spring: 
+   application: 
+      name: api-gateway
+zuul: 
+  routes: 
+    api: 
+      path: /api/**
+      serviceId: feign-consumer
+      
+eureka:
+   client: 
+      serviceUrl:
+         defaultZone: http://servertwo:1112/eureka/      
