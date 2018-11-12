@@ -2,15 +2,13 @@ server:
   port: 7001
   
 spring: 
-  application: 
-    name: config-server
-
-spring: 
+  application:
+     name: config-server
   cloud: 
     config: 
-      server: 
+       username: ddwangw
+       password: ddwanglife@wxay#5fk
+       server: 
         git: 
           uri: https://github.com/ddwangw/springcloud-learning.git
           searchPaths: config-repo
-          username: ddwangw
-          password: ddwanglife@wxay#5fk
