@@ -11,4 +11,4 @@ spring:
        server: 
         git: 
           uri: https://github.com/ddwangw/springcloud-learning.git
-          searchPaths: config-repo
+          searchPaths: /config-repo
